@@ -1,0 +1,28 @@
+{
+	"name": "ARBI Createspace",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "ARBI Createspace € Calculator ",
+	"browser_action": 
+	{
+		"default_icon": "boxicon.png",
+		"default_title": "ARBI Createspace",
+		"default_popup": "popup.html"
+	},
+
+	"content_scripts": [{
+							"matches": ["https://www.createspace.com/*"],
+							"js": ["jquery-3.2.0.js","popup.js"]
+						}],
+
+	"permissions": ["activeTab","tabs", "https://www.createspace.com/*"],
+
+	"content_security_policy": "script-src 'self' https://www.google.com; object-src 'self'",
+	"icons": 
+	{
+		"128": "boxicon.png"
+	}
+
+}
+
+
