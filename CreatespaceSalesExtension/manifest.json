@@ -11,7 +11,7 @@
 	},
 
 	"content_scripts": [{ "matches": ["https://www.createspace.com/*"],
-				   "js": ["jquery-3.2.0.js","popup.js"]
+				   "js": ["jquery-3.2.0.js","content.js"]
 			   }],
 	
 	"permissions": ["activeTab","tabs", "https://www.createspace.com/*"],
